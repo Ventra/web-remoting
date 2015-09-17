@@ -7,7 +7,7 @@ if [ ! -f compiler.jar ]; then
     rm -f compiler.zip
 fi
 
-if [ $1 == "u" ]; then
+if [ ! -f libraries ]; then
   #rm jquery.js sweetalert.js flipclock.js flipclock.css sweetalert.css socketio.js timer
   wget https://raw.githubusercontent.com/bfattori/timersjs/master/timers.js -O timers.js
   wget http://code.jquery.com/jquery-2.1.3.min.js -O jquery.js
@@ -16,6 +16,7 @@ if [ $1 == "u" ]; then
   wget https://cdnjs.cloudflare.com/ajax/libs/sweetalert/0.3.3/sweet-alert.min.css -O sweetalert.css
   wget https://raw.githubusercontent.com/objectivehtml/FlipClock/master/compiled/flipclock.js -O flipclock.js
   wget https://raw.githubusercontent.com/objectivehtml/FlipClock/master/compiled/flipclock.css -O flipclock.css
+  touch libraries
 fi
 
 echo '(function() {' > alljs.js

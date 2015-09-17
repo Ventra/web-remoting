@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "homepage": "https://github.com/giko/web-remoting",
   "authors": [
-    "nchudakov <n.chudakov@ventra.ru>"
+    "nchudakov <n.chudakov@ventra.ru>",
+    "aandreev <a.andreev@ventra.ru>"
   ],
   "main": "index.html",
   "license": "MIT",
@@ -23,7 +24,12 @@
     "angular-filter": ">=0.5.4",
     "bootstrap": ">=3.3.4",
     "angular-socket-io": ">=0.7.0",
-    "angular-translate": "~2.6.1",
-    "angular-translate-loader-static-files": "~2.6.1"
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-static-files": "~2.7.2",
+    "timers": "~3.46.1",
+    "jquery": "~1.11.3",
+    "sio-client": "~1.3.6",
+    "sweetalert": "~1.1.0",
+    "FlipClock": "~0.7.7"
   }
 }
